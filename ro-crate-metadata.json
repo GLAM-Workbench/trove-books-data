@@ -1,0 +1,195 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "0000-0001-7956-4498"
+                }
+            ],
+            "datePublished": "2024-02-13T23:55:50+00:00",
+            "description": "A GLAM Workbench data repository",
+            "hasPart": [
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-books/blob/master/Harvesting-digitised-books.ipynb"
+                },
+                {
+                    "@id": "trove-books.csv"
+                },
+                {
+                    "@id": "trove-books-schema.json"
+                }
+            ],
+            "isBasedOn": {
+                "@id": "https://github.com/GLAM-Workbench/trove-books/"
+            },
+            "license": {
+                "@id": "https://spdx.org/licenses/MIT"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-books"
+            },
+            "name": "trove-books-data",
+            "url": "https://github.com/GLAM-Workbench/trove-books-data"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "license": {
+                "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+            }
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-books/blob/master/Harvesting-digitised-books.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-books/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "",
+            "encodingFormat": "application/x-ipynb+json",
+            "name": "Harvesting the text of digitised books (and ephemera)",
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-books/blob/master/Harvesting-digitised-books.ipynb"
+        },
+        {
+            "@id": "trove-books.csv",
+            "@type": [
+                "File",
+                "Dataset"
+            ],
+            "conformsTo": {
+                "@id": "trove-books-schema.json"
+            },
+            "contentSize": 20290607,
+            "dateModified": "2024-02-14",
+            "encodingFormat": "text/csv",
+            "name": "trove-books.csv",
+            "sdDatePublished": "2024-02-14",
+            "size": 21218,
+            "url": "https://github.com/GLAM-Workbench/trove-books-data/blob/main/trove-books.csv",
+            "workExample": [
+                {
+                    "@id": "https://glam-workbench.net/datasette-lite/?csv=https://github.com/GLAM-Workbench/trove-books-data/blob/main/trove-books.csv&fts=title,sub_title,is_part_of&drop=work_type,fulltext_url_text,parent,parent_url,children,text_file"
+                },
+                {
+                    "@id": "https://tdg.glam-workbench.net/other-digitised-resources/books/overview.html"
+                }
+            ]
+        },
+        {
+            "@id": "trove-books-schema.json",
+            "@type": [
+                "File"
+            ],
+            "conformsTo": {
+                "@id": "https://specs.frictionlessdata.io/table-schema/"
+            },
+            "encodingFormat": "application/json",
+            "name": "Frictionless Table Schema for trove-books.csv dataset"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-books",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/"
+            },
+            "name": "Trove books",
+            "url": "https://glam-workbench.net/trove-books"
+        },
+        {
+            "@id": "https://glam-workbench.net/",
+            "@type": "CreativeWork",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "description": "A collection of tools, tutorials, examples, and hacks to help researchers work with data from galleries, libraries, archives, and museums (the GLAM sector).",
+            "name": "GLAM Workbench",
+            "url": "https://glam-workbench.net/"
+        },
+        {
+            "@id": "https://glam-workbench.net/datasette-lite/?csv=https://github.com/GLAM-Workbench/trove-books-data/blob/main/trove-books.csv&fts=title,sub_title,is_part_of&drop=work_type,fulltext_url_text,parent,parent_url,children,text_file",
+            "@type": "CreativeWork",
+            "name": "Explore using Datasette",
+            "url": "https://glam-workbench.net/datasette-lite/?csv=https://github.com/GLAM-Workbench/trove-books-data/blob/main/trove-books.csv&fts=title,sub_title,is_part_of&drop=work_type,fulltext_url_text,parent,parent_url,children,text_file"
+        },
+        {
+            "@id": "https://tdg.glam-workbench.net/other-digitised-resources/books/overview.html",
+            "@type": "CreativeWork",
+            "name": "Visualised in the *Trove Data Guide*",
+            "url": "https://tdg.glam-workbench.net/other-digitised-resources/books/overview.html"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-7956-4498",
+            "@type": "Person",
+            "mainEntityOfPage": "https://timsherratt.au",
+            "name": "Sherratt, Tim",
+            "orcid": "https://orcid.org/0000-0001-7956-4498"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-books/",
+            "@type": "Dataset",
+            "name": "trove-books",
+            "url": "https://github.com/GLAM-Workbench/trove-books/"
+        },
+        {
+            "@id": "https://spdx.org/licenses/MIT",
+            "@type": "CreativeWork",
+            "name": "MIT License",
+            "url": "https://spdx.org/licenses/MIT.html"
+        },
+        {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "@type": "CreativeWork",
+            "name": "CC0 Public Domain Dedication",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+            "@id": "https://www.python.org/downloads/release/python-31012/",
+            "@type": [
+                "ComputerLanguage",
+                "SoftwareApplication"
+            ],
+            "name": "Python 3.10.12",
+            "url": "https://www.python.org/downloads/release/python-31012/",
+            "version": "3.10.12"
+        },
+        {
+            "@id": "#Harvesting-digitised-books_run",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-02-14",
+            "instrument": {
+                "@id": "https://github.com/GLAM-Workbench/trove-books/blob/master/Harvesting-digitised-books.ipynb"
+            },
+            "name": "Run of notebook: Harvesting-digitised-books.ipynb",
+            "result": [
+                {
+                    "@id": "trove-books.csv"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "language": "eng",
+  "license": "CC0-1.0",
+  "title": "GLAM-Workbench/trove-books-data",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/GLAM-Workbench/trove-books-data/tree/v1.0",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://glam-workbench.net/trove-books/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-softwaredocumentation"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://glam-workbench.net/",
+      "relation": "isPartOf",
+      "resource_type": "other"
+    }
+  ],
+  "version": "v1.0",
+  "upload_type": "dataset",
+  "keywords": [
+    "digital humanities",
+    "Trove",
+    "books",
+    "GLAM Workbench"
+  ],
+  "publication_date": "2022-01-21",
+  "creators": [
+    {
+      "orcid": "0000-0001-7956-4498",
+      "name": "Sherratt, Tim"
+    }
+  ],
+  "access_right": "open",
+  "description": "<p><a href=\"https://repository.frictionlessdata.io/report?user=GLAM-Workbench&amp;repo=trove-newspapers-data-post-54&amp;flow=frictionless\"><img src=\"https://github.com/GLAM-Workbench/trove-newspapers-data-post-54/actions/workflows/frictionless.yaml/badge.svg\" alt=\"Frictionless\" /></a> <a href=\"https://doi.org/10.5281/zenodo.6812811\"><img src=\"https://zenodo.org/badge/DOI/10.5281/zenodo.6812811.svg\" alt=\"DOI\" /></a></p> <p>Current version: <a href=\"https://github.com/GLAM-Workbench/trove-newspapers-data-post-54/releases/tag/v1.5\">v1.5</a></p> <p>Due to copyright restrictions, most of the digitised newspaper articles on Trove were published before 1955. However, some articles published after 1954 have been made available. This repository provides data about digitised newspapers in Trove that have articles available from after 1954 (the ‘copyright cliff of death’).</p> <p>The data was extracted from the Trove API using <a href=\"https://glam-workbench.net/trove-newspapers/#beyond-the-copyright-cliff-of-death\">this notebook</a> from the <a href=\"https://glam-workbench.net/trove-newspapers/\">Trove newspapers</a> section of the GLAM Workbench.</p> <p>The data is available as a CSV file entitled <code>newspapers_post_54.csv</code> and contains the following fields:</p> <ul> <li><code>title</code> – the full title of the newspaper</li> <li><code>state</code> – the state in which the newspaper was published</li> <li><code>id</code> – Trove’s unique identifier for this newspaper</li> <li><code>startDate</code> – the earliest date of articles from this newspaper available in Trove</li> <li><code>endDate</code> – the latest date of articles from this newspaper available in Trove</li> <li><code>issn</code> – ISSN</li> <li><code>number_of_articles</code> – the number of articles from this newspaper <strong>published after 1954</strong> available in Trove</li> <li><code>troveUrl</code> – link to more information about this newspaper</li> </ul> <hr /> <p>This repository is part of the <a href=\"https://glam-workbench.github.io/\">GLAM Workbench</a>.<br /> If you think this project is worthwhile, you might like <a href=\"https://github.com/sponsors/wragge?o=esb\">to sponsor me on GitHub</a>.</p>"
+}
